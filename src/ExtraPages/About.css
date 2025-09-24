@@ -1,0 +1,50 @@
+.about-container {
+  padding: 20px;
+}
+
+.greeting {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.toggle-box {
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 10px ;
+  font-size: 16px;
+}
+
+.about-section {
+  margin-top: 10px;
+  border-top: 2px solid black;
+  padding: 10px;
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.linkedin-link {
+  background: none;
+  border: none;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}

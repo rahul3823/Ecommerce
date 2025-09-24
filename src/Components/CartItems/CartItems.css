@@ -1,0 +1,173 @@
+/* ✅ Outer wrapper for spacing from screen edges */
+.cart-wrapper {
+  padding: 0 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ✅ Main cart container */
+.cartitems {
+  margin: 50px 0;
+}
+
+/* ✅ Divider line */
+.cartitems hr {
+  height: 3px;
+  background: #e2e2e2;
+  border: 0;
+}
+
+/* ✅ Header row layout */
+.cartitems-format-main {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 0;
+  color: #454545;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ✅ Individual cart item row */
+.cartitems-format {
+  font-size: 15px;
+  font-weight: 500;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 0;
+}
+
+/* ✅ Product image */
+.carticon-product-icon {
+  height: 50px;
+  object-fit: contain;
+}
+
+/* ✅ Remove icon */
+.cartitems-remove-icon {
+  width: 15px;
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+/* ✅ Quantity input */
+.cartitems-quantity {
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+}
+
+/* ✅ Bottom section layout */
+.cartitems-down {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 70px 0;
+  gap: 40px;
+}
+
+/* ✅ Total summary section */
+.cartitems-total {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+  gap: 30px;
+}
+
+/* ✅ Total line items */
+.cartitems-total-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+/* ✅ Checkout button */
+.cartitems-total button {
+  width: 250px;
+  height: 50px;
+  outline: none;
+  border: none;
+  background: #ff5a5a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ✅ Promo code section */
+.cartitems-promocode {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cartitems-promocode p {
+  color: #555;
+}
+
+/* ✅ Promo code input box */
+.cartitems-promobox {
+  width: 300px;
+  margin-top: 15px;
+  padding-left: 20px;
+  height: 50px;
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ✅ Promo code input field */
+.cartitems-promobox input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+/* ✅ Promo code submit button */
+.cartitems-promobox button {
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+/* ✅ Misc clickable elements */
+.ww {
+  cursor: pointer;
+}
+
+/* ✅ Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .cartitems-format-main,
+  .cartitems-format {
+    grid-template-columns: 1fr 2fr 1fr;
+    font-size: 14px;
+    gap: 15px;
+  }
+
+  .cartitems-down {
+    flex-direction: column;
+    margin: 40px 0;
+  }
+
+  .cartitems-total {
+    margin-right: 0;
+  }
+
+  .cartitems-total button,
+  .cartitems-promobox,
+  .cartitems-promobox button {
+    width: 100%;
+  }
+}
